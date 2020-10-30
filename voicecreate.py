@@ -1,13 +1,11 @@
-import discord
+import discord, traceback, sys
 from discord.ext import commands
-import traceback
-import sys
 
 bot = commands.Bot(command_prefix=".")
 
 bot.remove_command("help")
 
-DISCORD_TOKEN = 'Enter Discord Token here'
+DISCORD_TOKEN = 'NjY5OTYwNDA5ODg0NjU1NjE4.XinbQA.f4HGfmnuWYYmiqFiB3J4KGPx424'
 
 initial_extensions = ['cogs.voice']
 
@@ -21,9 +19,11 @@ if __name__ == '__main__':
 
 @bot.event
 async def on_ready():
-    print('Logged in as')
+    print('=-=-=-=-=-=-=-=-=-=-=-=')
+    print('Connecté en tant que :')
     print(bot.user.name)
+    print('\nID du bot :')
     print(bot.user.id)
-    print('------')
+    print("=-=-=-=-=-=-=-=-=-=-=-=")
 
 bot.run(DISCORD_TOKEN)
