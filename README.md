@@ -1,3 +1,7 @@
+# Note importante
+
+Il s'agit ici d'une traduction française du bot Voice-Master. Je me suis contenté de changer uniquement le code, et rien de plus. Voici pourquoi toute la documentation est en anglais.
+
 # VoiceMaster
 
 Discord bot created to change the way servers run, instead of having permanent channels you can now create temporary ones that delete themselves once they are empty.
